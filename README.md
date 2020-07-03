@@ -6,6 +6,7 @@ This is a fork library which corrects some code and add functionality
 - Fixed KeyError on initializing object when the bulb was off
 - Added a method (info given below)
 - Added a method for color cycling
+- Increased Buffer size to 2048 Bytes as pointed out by @nikoladze
 
 ## New Methods:
 
