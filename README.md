@@ -1,6 +1,6 @@
 # Updated TP-Link LB130 Python Library
 
-This is a fork library which corrects some code and add functionality
+This is a fork library which corrects some code and adds Color Cycling. 
 
 ## Fixes:
 - Fixed KeyError on initializing object when the bulb was off
@@ -15,7 +15,11 @@ Checks the on state of the bulb and returns a boolean:
 isOn()
 ```
 
-Note that if you use `colorCycler.py`, you must use `Ctrl+C` to terminate out of the program. If you want your program to continue doing something after the keyboard interrupt, use the solution given [here](https://stackoverflow.com/a/13181036/12925947) 
+## Color Cycler:
+
+Cycles through all the colors like a razer mouse. Does it almost stutter and error free. By default, it takes almost 22s to cycle through all of the colors.
+
+###### Note that if you use `colorCycler.py`, you must use `Ctrl+C` to terminate out of the program. If you want your program to continue doing something after the keyboard interrupt, use the solution given [here](https://stackoverflow.com/a/13181036/12925947) 
 
 
 # README from forked Library
