@@ -82,13 +82,11 @@ class LB130(object):
                     self.__color_temp = int(
                         data[col1][col2][col3]["dft_on_state"]["color_temp"]
                     )
-                    print("Bulb was off")
                 else:
                     self.__hue = int(data[col1][col2][col3]["hue"])
                     self.__saturation = int(data[col1][col2][col3]["saturation"])
                     self.__brightness = int(data[col1][col2][col3]["brightness"])
                     self.__color_temp = int(data[col1][col2][col3]["color_temp"])
-                    print("Bulb was on")
                 self.device_id = str(data[col1][col2]["deviceId"])
             except (RuntimeError, TypeError, ValueError) as exception:
                 raise Exception(exception)
