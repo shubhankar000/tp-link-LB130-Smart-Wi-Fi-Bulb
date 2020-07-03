@@ -63,5 +63,8 @@ except:
 else:
     if not light.isOn():  # Turn on the light if it isnt on
         light.on()
+
+    print("Now cycling")
+
     while True:
         colorCycler(light)
