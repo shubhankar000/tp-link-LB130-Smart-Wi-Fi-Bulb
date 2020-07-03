@@ -1,4 +1,28 @@
-# TP-Link A19-LB130 Wifi Bulb Python Library
+# Updated TP-Link LB130 Python Library
+
+This is a fork library which corrects some code and add functionality
+
+## Fixes:
+- Fixed KeyError on initializing object when the bulb was off
+- Added a method (info given below)
+- Added a method for color cycling
+
+## New Methods:
+
+Checks the on state of the bulb and returns a boolean:
+```
+isOn()
+```
+Color cycler:
+```
+startColorCycle()
+```
+
+Note that if you call `startColorCycle()`, you must use `Ctrl+C` to terminate out of the program. If you want your program to continue doing something after the keyboard interrupt, use the solution given [here](https://stackoverflow.com/a/13181036/12925947) 
+
+
+# README from forked Library
+## TP-Link A19-LB130 Wifi Bulb Python Library
 
 The tplight.py python library contains a class LB130 and methods for controlling the TP-Link A19-LB130 Wifi bulb.
 
@@ -10,7 +34,7 @@ Create an instance of the LB130 class with the IP address for the bulb
 light = LB130("10.0.0.130")
 ```
 
-## Methods
+### Methods
 
 ```
 status()
