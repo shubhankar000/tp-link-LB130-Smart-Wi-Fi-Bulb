@@ -1,16 +1,6 @@
-"""Color Cycler for TP-Link LB130 bulb using the library available on:
-        https://github.com/briandorey/tp-link-LB130-Smart-Wi-Fi-Bulb
-    
-Implemented:
-- Color cycling which is almost perfectly non-stuttery, error free (from failed transmissions) 
-
-TODO:
-- Random Color changer
-- check for on/off state, put in on state and then start the color cycling
-- play with light.transition, range() and step in range to see how fast/smoothly color changing occurs
-- Auto on/off detection
-- Add code for retrying rather than try/except
-- Auto detect current color
+"""
+Original library from where forked:
+https://github.com/briandorey/tp-link-LB130-Smart-Wi-Fi-Bulb
 """
 
 
@@ -18,8 +8,8 @@ from tplight import LB130
 import time
 
 # some constants
-YOUR_IP = "192.168.68.110"  # change this
-BRIGHTNESS = 30  # an int as a percentage
+YOUR_IP = "192.168.68.108"  # change this
+BRIGHTNESS = 1  # an int as a percentage
 STEP = 10
 TRANSITION_PERIOD = 600  # in ms
 
